@@ -76,6 +76,7 @@ public class Employee {
             return "Employee is not permitted a car parking space.";
         }
     }
+
     @Override
     public String toString () {
         final StringBuilder sb = new StringBuilder ("Employee{");
