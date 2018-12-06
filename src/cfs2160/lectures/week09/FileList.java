@@ -37,19 +37,20 @@ public class FileList {
         if (files.isEmpty ()) {
             System.out.println ("No files to search.");
         }
+        else {
 
-        boolean found = false;
-        int index = 0;
+            boolean found = false;
+            int index = 0;
 
-        do {
-            if (this.files.get (index).contains (search)) {
-                System.out.println (files.get (index));
-                found = true;
-            }
-            else {
-                index ++;
-            }
-        } while (!found && index < files.size ());
+            do {
+                if (this.files.get (index).contains (search)) {
+                    System.out.println (files.get (index));
+                    found = true;
+                } else {
+                    index++;
+                }
+            } while (!found && index < files.size ());
+        }
     }
 
     public static void main (String[] args) {
