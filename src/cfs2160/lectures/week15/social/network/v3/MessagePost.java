@@ -17,6 +17,7 @@ public class MessagePost extends Post {
         this.message = message;
     }
 
+    @Override
     public void display()
     {
         super.display ();
