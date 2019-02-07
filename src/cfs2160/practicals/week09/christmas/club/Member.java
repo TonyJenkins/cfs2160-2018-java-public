@@ -1,6 +1,6 @@
 package cfs2160.practicals.week09.christmas.club;
 
-public class Member {
+public class  Member {
 
     private String name;
     private int contribution;
