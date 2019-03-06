@@ -27,6 +27,15 @@ public class DepositAccount extends BankAccount {
         return amount > 0;
     }
 
+    public boolean withdraw (double amount) {
+        if (amount >= this.getBalance ()) {
+            this.setBalance (this.getBalance () - amount);
+            return true;
+        }
+
+        return false;
+    }
+
     public boolean addInterest () {
         if (this.interestRate > 0 && this.getBalance () > 0) {
             double newBalance = this.getBalance () * (1 + (this.interestRate / 100.0));

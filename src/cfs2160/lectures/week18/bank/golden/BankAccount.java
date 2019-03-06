@@ -43,6 +43,8 @@ abstract public class BankAccount {
         return amount > 0;
     }
 
+    abstract boolean withdraw (double amount);
+
     abstract void display ();
 
 }
